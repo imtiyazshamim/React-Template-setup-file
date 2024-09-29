@@ -1,0 +1,70 @@
+/* Homebanner Styling */
+.homebanner {
+    background-image: url('https://bootstrapmade.com/content/demo/QuickStart/assets/img/tabs-1.jpg');
+ background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  .homebanner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+  }
+  
+  .banner-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+  }
+  
+  .banner-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .banner-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .btn-get-started {
+    padding: 12px 30px;
+    background-color: #388da8; /* Accent color */
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-get-started:hover {
+    background-color: #2a6b81; /* Darker shade on hover */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .banner-content h1 {
+      font-size: 32px;
+    }
+  
+    .banner-content p {
+      font-size: 18px;
+    }
+  
+    .btn-get-started {
+      padding: 10px 24px;
+      font-size: 14px;
+    }
+  }
+  

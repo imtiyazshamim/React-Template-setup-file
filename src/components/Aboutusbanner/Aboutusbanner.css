@@ -1,0 +1,52 @@
+.aboutus-banner {
+    background-image: url('https://bootstrapmade.com/content/demo/QuickStart/assets/img/about-company-2.jpg'); /* Use your background image */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .aboutus-content {
+    color: white;
+    z-index: 1;
+  }
+  
+  h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .btn-learn-more {
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-learn-more:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Overlay for better text readability */
+  .aboutus-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    z-index: 0;
+  }
+  
